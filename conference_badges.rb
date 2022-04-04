@@ -25,8 +25,6 @@ def assign_rooms names
 end
 
 def printer name_array
-    badges = batch_badge_creator name_array
-    badges.each {|badge| puts badge}
-    rooms = assign_rooms name_array
-    rooms.each {|room| puts room}
+    (batch_badge_creator name_array).each {|badge| puts badge}
+    (assign_rooms name_array).each {|room| puts room}
 end
